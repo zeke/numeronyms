@@ -1,6 +1,6 @@
 {
   "name": "numeronyms",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Turn words into neuronyms",
   "main": "index.js",
   "repository": "https://github.com/zeke/numeronyms",
@@ -8,10 +8,19 @@
   "license": "MIT",
   "devDependencies": {
     "jest": "^22.4.2",
-    "standard": "^11.0.0"
+    "standard": "^11.0.0",
+    "semantic-release": "^15.0.0",
+    "travis-deploy-once": "^4.3.4"
   },
   "scripts": {
     "test": "jest && standard --fix",
-    "watch": "jest --watch --notify --notifyMode=change --coverage"
+    "watch": "jest --watch --notify --notifyMode=change --coverage",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
   }
 }
