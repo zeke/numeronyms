@@ -17,5 +17,10 @@
     "watch": "jest --watch --notify --notifyMode=change --coverage",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
   }
 }
