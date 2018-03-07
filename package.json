@@ -1,0 +1,17 @@
+{
+  "name": "numeronyms",
+  "version": "1.0.0",
+  "description": "Turn words into neuronyms",
+  "main": "index.js",
+  "repository": "https://github.com/zeke/numeronyms",
+  "author": "zeke",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^22.4.2",
+    "standard": "^11.0.0"
+  },
+  "scripts": {
+    "test": "jest && standard --fix",
+    "watch": "jest --watch --notify --notifyMode=change --coverage"
+  }
+}
